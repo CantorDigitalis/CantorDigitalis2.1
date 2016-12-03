@@ -1,0 +1,1 @@
+The LIMSI.CantorDigitalis folder follows a particular structure in order to be used as a package in Max 6.0 http://cycling74.com/products/max/. This folder must be copied-pasted in the following Max folder: Applications/Max 6/packages/.

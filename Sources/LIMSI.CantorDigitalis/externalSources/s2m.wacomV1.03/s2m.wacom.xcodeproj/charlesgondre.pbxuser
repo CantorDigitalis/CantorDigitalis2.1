@@ -1,0 +1,515 @@
+// !$*UTF8*$!
+{
+	089C1669FE841209C02AAC07 /* Project object */ = {
+		activeBuildConfigurationName = Deployment;
+		activeExecutable = 0D623A7015C94D2600EB2868 /* Executable */;
+		activeTarget = 8D01CCC60486CAD60068D4B7 /* s2m.wacom */;
+		codeSenseManager = 0D4FED4514FBE10F003C151F /* Code sense */;
+		executables = (
+			0D623A7015C94D2600EB2868 /* Executable */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXExecutablesDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXExecutablesDataSource_NameID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					22,
+					300,
+					792,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXExecutablesDataSource_ActiveFlagID,
+					PBXExecutablesDataSource_NameID,
+					PBXExecutablesDataSource_CommentsID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					904,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					864,
+					60,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 369822329;
+			PBXWorkspaceStateSaveDate = 369822329;
+		};
+		perUserProjectItems = {
+			0D184D6C15EE75F500513DBE /* PBXTextBookmark */ = 0D184D6C15EE75F500513DBE /* PBXTextBookmark */;
+			0D2898FE15BE969D00304C3A /* PBXTextBookmark */ = 0D2898FE15BE969D00304C3A /* PBXTextBookmark */;
+			0D34226714FE9718004B6BE0 /* PBXTextBookmark */ = 0D34226714FE9718004B6BE0 /* PBXTextBookmark */;
+			0D462B6D15F73C9A0066CDD2 /* PBXTextBookmark */ = 0D462B6D15F73C9A0066CDD2 /* PBXTextBookmark */;
+			0D462C2515F745850066CDD2 /* PBXTextBookmark */ = 0D462C2515F745850066CDD2 /* PBXTextBookmark */;
+			0D462C2715F745850066CDD2 /* PBXTextBookmark */ = 0D462C2715F745850066CDD2 /* PBXTextBookmark */;
+			0D462C2815F745850066CDD2 /* PBXTextBookmark */ = 0D462C2815F745850066CDD2 /* PBXTextBookmark */;
+			0D462C4D15F746A20066CDD2 /* PBXTextBookmark */ = 0D462C4D15F746A20066CDD2 /* PBXTextBookmark */;
+			0D462CA515F74D5B0066CDD2 /* PBXTextBookmark */ = 0D462CA515F74D5B0066CDD2 /* PBXTextBookmark */;
+			0D4FEFB614FD263D003C151F /* PBXTextBookmark */ = 0D4FEFB614FD263D003C151F /* PBXTextBookmark */;
+			0D4FEFB714FD263D003C151F /* PBXTextBookmark */ = 0D4FEFB714FD263D003C151F /* PBXTextBookmark */;
+			0D4FEFB814FD263D003C151F /* PBXTextBookmark */ = 0D4FEFB814FD263D003C151F /* PBXTextBookmark */;
+			0D4FEFC814FD2CAA003C151F /* PBXTextBookmark */ = 0D4FEFC814FD2CAA003C151F /* PBXTextBookmark */;
+			0D7C348E160B0C08000E7C34 /* PBXTextBookmark */ = 0D7C348E160B0C08000E7C34 /* PBXTextBookmark */;
+			0D7C3490160B0C08000E7C34 /* PBXTextBookmark */ = 0D7C3490160B0C08000E7C34 /* PBXTextBookmark */;
+			0D7C3491160B0C08000E7C34 /* PBXTextBookmark */ = 0D7C3491160B0C08000E7C34 /* PBXTextBookmark */;
+			0D7C3496160B0C08000E7C34 /* PBXBookmark */ = 0D7C3496160B0C08000E7C34 /* PBXBookmark */;
+			0D7C3498160B0C08000E7C34 /* PBXTextBookmark */ = 0D7C3498160B0C08000E7C34 /* PBXTextBookmark */;
+			0DB464E415B80B6100011444 /* PBXTextBookmark */ = 0DB464E415B80B6100011444 /* PBXTextBookmark */;
+		};
+		sourceControlManager = 0D4FED4414FBE10F003C151F /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	0D184D6C15EE75F500513DBE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0DCCFC43144ECEF8006F1097 /* NSAppleEventDescriptorHelperCategory.m */;
+		name = "NSAppleEventDescriptorHelperCategory.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 2624;
+		vrLoc = 0;
+	};
+	0D2898FE15BE969D00304C3A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0DCCFC44144ECEF8006F1097 /* TabletAEDictionary.h */;
+		name = "TabletAEDictionary.h: 291";
+		rLen = 15;
+		rLoc = 10879;
+		rType = 0;
+		vrLen = 2691;
+		vrLoc = 9383;
+	};
+	0D34226714FE9718004B6BE0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0D34226814FE9718004B6BE0 /* NSGeometry.h */;
+		name = "NSGeometry.h: 175";
+		rLen = 13;
+		rLoc = 3839;
+		rType = 0;
+		vrLen = 2688;
+		vrLoc = 2785;
+	};
+	0D34226814FE9718004B6BE0 /* NSGeometry.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = NSGeometry.h;
+		path = /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Foundation.framework/Versions/C/Headers/NSGeometry.h;
+		sourceTree = "<absolute>";
+	};
+	0D462B6D15F73C9A0066CDD2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0D800B0915F66BBD0080DEE1 /* ext_obex.h */;
+		name = "ext_obex.h: 122";
+		rLen = 24;
+		rLoc = 5273;
+		rType = 0;
+		vrLen = 2698;
+		vrLoc = 3309;
+	};
+	0D462C2515F745850066CDD2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0D462C2615F745850066CDD2 /* message.h */;
+		name = "message.h: 53";
+		rLen = 51;
+		rLoc = 1661;
+		rType = 0;
+		vrLen = 3069;
+		vrLoc = 0;
+	};
+	0D462C2615F745850066CDD2 /* message.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = message.h;
+		path = /Developer/SDKs/MacOSX10.6.sdk/usr/include/objc/message.h;
+		sourceTree = "<absolute>";
+	};
+	0D462C2715F745850066CDD2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0DA41D511461A798003231C2 /* MaxAudioSignal.h */;
+		name = "MaxAudioSignal.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 4229;
+		vrLoc = 0;
+	};
+	0D462C2815F745850066CDD2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0DFC6AEC14FBBD1A00B429A0 /* maxmspsdk.xcconfig */;
+		name = "maxmspsdk.xcconfig: 31";
+		rLen = 0;
+		rLoc = 984;
+		rType = 0;
+		vrLen = 1437;
+		vrLoc = 0;
+	};
+	0D462C4D15F746A20066CDD2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0D800B0715F66BBD0080DEE1 /* ext_hashtab.h */;
+		name = "ext_hashtab.h: 43";
+		rLen = 4;
+		rLoc = 944;
+		rType = 0;
+		vrLen = 1780;
+		vrLoc = 0;
+	};
+	0D462CA515F74D5B0066CDD2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0DA41D551461A798003231C2 /* MaxObject_Prefix.pch */;
+		name = "MaxObject_Prefix.pch: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1543;
+		vrLoc = 0;
+	};
+	0D4FED4414FBE10F003C151F /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	0D4FED4514FBE10F003C151F /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	0D4FEF9414FD1481003C151F /* s2m.resFS1~.c */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.c;
+		name = "s2m.resFS1~.c";
+		path = "/Users/charlesgondre/Documents/maxMsp/devS2M/objects/C/s2m.resFS1/s2m.resFS1~.c";
+		sourceTree = "<absolute>";
+	};
+	0D4FEFB614FD263D003C151F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0D4FEF9414FD1481003C151F /* s2m.resFS1~.c */;
+		name = "s2m.resFS1~.c: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 2584;
+		vrLoc = 1660;
+	};
+	0D4FEFB714FD263D003C151F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0DCCFC46144ECEF8006F1097 /* WacomTabletDriver.m */;
+		name = "WacomTabletDriver.m: 341";
+		rLen = 51;
+		rLoc = 12229;
+		rType = 0;
+		vrLen = 2762;
+		vrLoc = 9268;
+	};
+	0D4FEFB814FD263D003C151F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0D4FEFB914FD263D003C151F /* AppController.m */;
+		name = "AppController.m: 635";
+		rLen = 14;
+		rLoc = 19993;
+		rType = 0;
+		vrLen = 2732;
+		vrLoc = 18820;
+	};
+	0D4FEFB914FD263D003C151F /* AppController.m */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.objc;
+		name = AppController.m;
+		path = /Users/charlesgondre/Documents/interfaces/Wacom/WACOMexemple/TabletMapping/Source/App/AppController.m;
+		sourceTree = "<absolute>";
+	};
+	0D4FEFBB14FD263D003C151F /* NSEvent.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = NSEvent.h;
+		path = /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/AppKit.framework/Versions/C/Headers/NSEvent.h;
+		sourceTree = "<absolute>";
+	};
+	0D4FEFC814FD2CAA003C151F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0D4FEFC914FD2CAA003C151F /* wacom.c */;
+		name = "wacom.c: 24";
+		rLen = 1;
+		rLoc = 935;
+		rType = 0;
+		vrLen = 2345;
+		vrLoc = 0;
+	};
+	0D4FEFC914FD2CAA003C151F /* wacom.c */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.c;
+		name = wacom.c;
+		path = /Users/charlesgondre/Documents/interfaces/Wacom/S2Mwacom_sources/wacom.c;
+		sourceTree = "<absolute>";
+	};
+	0D623A7015C94D2600EB2868 /* Executable */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		launchableReference = 0D623A7115C94D2600EB2868 /* Max Runtime.app */;
+		libgmallocEnabled = 0;
+		name = Executable;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+		startupPath = "<<ProjectDirectory>>";
+	};
+	0D623A7115C94D2600EB2868 /* Max Runtime.app */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = wrapper.application;
+		name = "Max Runtime.app";
+		path = "/Applications/Max6/Max Runtime.app";
+		sourceTree = "<absolute>";
+	};
+	0D7C348E160B0C08000E7C34 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0D7C348F160B0C08000E7C34 /* attrtester.c */;
+		name = "attrtester.c: 21";
+		rLen = 1;
+		rLoc = 484;
+		rType = 0;
+		vrLen = 3044;
+		vrLoc = 0;
+	};
+	0D7C348F160B0C08000E7C34 /* attrtester.c */ = {
+		isa = PBXFileReference;
+		name = attrtester.c;
+		path = "/Users/charlesgondre/SDKs/MaxSDK-5.1.7/examples/attrtester/attrtester.c";
+		sourceTree = "<absolute>";
+	};
+	0D7C3490160B0C08000E7C34 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0D9F32481455625000C962CC /* s2m.wacom.m */;
+		name = "s2m.wacom.m: 174";
+		rLen = 16;
+		rLoc = 4571;
+		rType = 0;
+		vrLen = 2514;
+		vrLoc = 3120;
+	};
+	0D7C3491160B0C08000E7C34 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0D9F32481455625000C962CC /* s2m.wacom.m */;
+		name = "s2m.wacom.m: 174";
+		rLen = 9;
+		rLoc = 4578;
+		rType = 0;
+		vrLen = 2344;
+		vrLoc = 4040;
+	};
+	0D7C3496160B0C08000E7C34 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 0D7C3497160B0C08000E7C34 /* attrtester.c */;
+	};
+	0D7C3497160B0C08000E7C34 /* attrtester.c */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.c;
+		name = attrtester.c;
+		path = "/Users/charlesgondre/SDKs/MaxSDK-5.1.7/examples/attrtester/attrtester.c";
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1161, 1989}}";
+			sepNavSelRange = "{2495, 77}";
+			sepNavVisRange = "{4, 3261}";
+			sepNavWindowFrame = "{{63, 54}, {1220, 1325}}";
+		};
+	};
+	0D7C3498160B0C08000E7C34 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0D7C3499160B0C08000E7C34 /* attrtester.c */;
+		name = "attrtester.c: 73";
+		rLen = 77;
+		rLoc = 2495;
+		rType = 0;
+		vrLen = 3261;
+		vrLoc = 4;
+	};
+	0D7C3499160B0C08000E7C34 /* attrtester.c */ = {
+		isa = PBXFileReference;
+		name = attrtester.c;
+		path = "/Users/charlesgondre/SDKs/MaxSDK-5.1.7/examples/attrtester/attrtester.c";
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1161, 1989}}";
+			sepNavSelRange = "{2495, 77}";
+			sepNavVisRange = "{4, 3261}";
+		};
+	};
+	0D800B0715F66BBD0080DEE1 /* ext_hashtab.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = ext_hashtab.h;
+		path = "/Users/charlesgondre/Dropbox/dev/maxMspBasics/c74support/max-includes/ext_hashtab.h";
+		sourceTree = "<absolute>";
+	};
+	0D800B0915F66BBD0080DEE1 /* ext_obex.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = ext_obex.h;
+		path = "/Users/charlesgondre/Dropbox/dev/maxMspBasics/c74support/max-includes/ext_obex.h";
+		sourceTree = "<absolute>";
+	};
+	0D9F32481455625000C962CC /* s2m.wacom.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1083, 19071}}";
+			sepNavSelRange = "{4578, 9}";
+			sepNavVisRange = "{4040, 2344}";
+			sepNavWindowFrame = "{{1348, 261}, {1132, 1051}}";
+		};
+	};
+	0DA41D301461A68B003231C2 /* commonsyms.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1082, 1119}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 269}";
+		};
+	};
+	0DA41D511461A798003231C2 /* MaxAudioSignal.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1082, 1248}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 4229}";
+		};
+	};
+	0DA41D521461A798003231C2 /* MaxAudioSignal.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1632, 1055}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 2571}";
+		};
+	};
+	0DA41D531461A798003231C2 /* MaxObject.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1082, 1261}}";
+			sepNavSelRange = "{2928, 0}";
+			sepNavVisRange = "{0, 3936}";
+		};
+	};
+	0DA41D541461A798003231C2 /* MaxObject.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1082, 7631}}";
+			sepNavSelRange = "{12866, 0}";
+			sepNavVisRange = "{15796, 2280}";
+		};
+	};
+	0DA41D551461A798003231C2 /* MaxObject_Prefix.pch */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1082, 1119}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1543}";
+		};
+	};
+	0DA41D561461A798003231C2 /* maxobjectbridge.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1082, 1768}}";
+			sepNavSelRange = "{5113, 0}";
+			sepNavVisRange = "{2341, 4280}";
+		};
+	};
+	0DA41D571461A798003231C2 /* maxobjectbridge.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1082, 5954}}";
+			sepNavSelRange = "{4502, 4}";
+			sepNavVisRange = "{2972, 2327}";
+		};
+	};
+	0DB464E415B80B6100011444 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0D4FEFBB14FD263D003C151F /* NSEvent.h */;
+		name = "NSEvent.h: 268";
+		rLen = 7;
+		rLoc = 9718;
+		rType = 0;
+		vrLen = 3491;
+		vrLoc = 6930;
+	};
+	0DCCFC43144ECEF8006F1097 /* NSAppleEventDescriptorHelperCategory.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1632, 2340}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 2624}";
+		};
+	};
+	0DCCFC44144ECEF8006F1097 /* TabletAEDictionary.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1361, 4836}}";
+			sepNavSelRange = "{10879, 15}";
+			sepNavVisRange = "{9170, 2991}";
+			sepNavWindowFrame = "{{15, 69}, {1420, 1349}}";
+		};
+	};
+	0DCCFC46144ECEF8006F1097 /* WacomTabletDriver.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1305, 8723}}";
+			sepNavSelRange = "{12229, 51}";
+			sepNavVisRange = "{9268, 2762}";
+		};
+	};
+	0DFC6AEC14FBBD1A00B429A0 /* maxmspsdk.xcconfig */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1082, 1119}}";
+			sepNavSelRange = "{984, 0}";
+			sepNavVisRange = "{0, 1437}";
+		};
+	};
+	8D01CCC60486CAD60068D4B7 /* s2m.wacom */ = {
+		activeExec = 0;
+	};
+}
