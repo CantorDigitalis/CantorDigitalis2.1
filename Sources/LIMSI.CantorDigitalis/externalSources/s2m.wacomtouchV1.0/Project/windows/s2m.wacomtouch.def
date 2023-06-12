@@ -1,4 +1,0 @@
-LIBRARY s2m.wacomtouch.mxe
-
-EXPORTS
-	main
