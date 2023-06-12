@@ -1,0 +1,8 @@
+== Major Cantor Digitalis features and updates ==
+
+This file just lists the more notable headline features.
+
+Version 2.1
+	- Source code is now organised as a max project
+	- Including update of s2m.wacom.mxo and s2m.wacomtouch.mxo (arm architecture compatibility)
+	- Fixed latency issue with vowel change
