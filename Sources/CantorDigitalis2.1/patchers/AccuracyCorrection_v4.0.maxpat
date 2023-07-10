@@ -1424,7 +1424,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 123.350266, 738.0, 46.0, 18.0 ],
-					"text" : "line 0."
+					"text" : "line 0. @compatmode 1"
 				}
 
 			}

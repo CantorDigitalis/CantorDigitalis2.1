@@ -576,7 +576,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 306.900024, 664.0, 44.0, 20.0 ],
-					"text" : "line 0."
+					"text" : "line 0. @compatmode 1"
 				}
 
 			}
@@ -604,7 +604,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 45.0, 664.0, 44.0, 20.0 ],
-					"text" : "line 0."
+					"text" : "line 0. @compatmode 1"
 				}
 
 			}

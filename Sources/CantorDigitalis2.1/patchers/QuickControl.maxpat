@@ -121,7 +121,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 151.0, 191.692932, 51.0, 20.0 ],
-					"text" : "line 0. 10"
+					"text" : "line 0. 10 @compatmode 1"
 				}
 
 			}
@@ -135,7 +135,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 30.0, 190.692932, 51.0, 20.0 ],
-					"text" : "line 0. 10"
+					"text" : "line 0. 10 @compatmode 1"
 				}
 
 			}
@@ -225,7 +225,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 447.0, 191.692932, 46.0, 20.0 ],
-					"text" : "line 0."
+					"text" : "line 0. @compatmode 1"
 				}
 
 			}
@@ -239,7 +239,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 300.0, 190.692932, 46.0, 20.0 ],
-					"text" : "line 0."
+					"text" : "line 0. @compatmode 1"
 				}
 
 			}
