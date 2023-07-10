@@ -1,0 +1,71 @@
+<jittershader name="mrt">
+	<param name="tex_color" type="int" default="0" />
+	<param name="tex_velocity" type="int" default="1" />		
+	<param name="tex_prev" type="int" default="2" />		
+	<param name="velocity_scale" type="float" default="1." />			
+	<param name="fb_amt" type="float" default="0.5" />
+	<param name="noise_amt" type="float" default="0.5" />
+	<param name="time" type="float" default="0.0" />
+	<language name="glsl" version="1.2">
+		<bind param="tex_color" program="fp" />
+		<bind param="tex_prev" program="fp" />
+		<bind param="tex_velocity" program="fp" />				
+		<bind param="velocity_scale" program="fp" />					
+		<bind param="fb_amt" program="fp" />
+		<bind param="noise_amt" program="fp" />
+		<bind param="time" program="fp" />
+		<program name="vp" type="vertex">
+<![CDATA[
+
+varying vec2 texcoord;
+varying vec2 texdim0;
+
+void main()
+{
+	gl_Position = gl_ModelViewProjectionMatrix * gl_Vertex;
+	texcoord = vec2(gl_TextureMatrix[0] * gl_MultiTexCoord0);
+	texdim0 = vec2 (abs(gl_TextureMatrix[0][0][0]),abs(gl_TextureMatrix[0][1][1]));
+}
+
+]]>		
+		</program>
+		<program name="fp" type="fragment">
+<![CDATA[
+
+// based on https://ompuco.wordpress.com/2018/03/29/creating-your-own-datamosh-effect/
+
+#version 120
+varying vec2 texcoord;
+varying vec2 texdim0;
+uniform sampler2DRect tex_color; 
+uniform sampler2DRect tex_prev; 
+uniform sampler2DRect tex_velocity;
+uniform float velocity_scale;
+uniform float fb_amt;
+uniform float noise_amt;
+uniform float time;
+#define STEPS 64
+
+float nrand(float x, float y)
+{
+	return fract(sin(dot(vec2(x, y), vec2(12.9898, 78.233))) * 43758.5453);
+}
+
+void main()
+{
+	vec2 norm = texcoord / texdim0;
+	vec2 steps = vec2(1. / STEPS);
+	vec2 vtc = floor(norm / steps) * steps;
+	float n = nrand(time, vtc.x + vtc.y * texdim0.x);	
+	vtc *= texdim0;
+	vec2 velocity = texture2DRect( tex_velocity, vtc).xy * texdim0;
+	velocity *= (velocity_scale * n);
+	float m = mix(n * noise_amt, 1., fb_amt);
+	vec4 image = mix(texture2DRect(tex_color, texcoord), texture2DRect(tex_prev, texcoord - velocity), m);
+	gl_FragColor = image;
+}
+
+]]>		
+		</program>		
+	</language>
+</jittershader>

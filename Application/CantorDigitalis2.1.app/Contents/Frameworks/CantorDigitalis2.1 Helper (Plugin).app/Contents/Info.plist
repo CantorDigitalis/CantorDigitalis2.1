@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildMachineOSBuild</key>
+	<string>18G87</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>CantorDigitalis2.1 Helper (Plugin)</string>
+	<key>CFBundleGetInfoString</key>
+	<string>8.1.0, Copyright 2014 Cycling '74</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.cycling74.CantorDigitalis2.1Helper_Plugin</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleLongVersionString</key>
+	<string>CantorDigitalis2.1 Helper (Plugin) 8.1.0 (build dcf61ce), Copyright 2014 Cycling '74</string>
+	<key>CFBundleName</key>
+	<string>CantorDigitalis2.1 Helper (Plugin)</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>8.1.0 (dcf61ce)</string>
+	<key>CFBundleSignature</key>
+	<string>max2</string>
+	<key>CFBundleSupportedPlatforms</key>
+	<array>
+		<string>MacOSX</string>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>8.1.0</string>
+	<key>CSResourcesFileMapped</key>
+	<false/>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<key>DTPlatformBuild</key>
+	<string>10G8</string>
+	<key>DTPlatformVersion</key>
+	<string>GM</string>
+	<key>DTSDKBuild</key>
+	<string>17E189</string>
+	<key>DTSDKName</key>
+	<string>macosx10.13</string>
+	<key>DTXcode</key>
+	<string>1030</string>
+	<key>DTXcodeBuild</key>
+	<string>10G8</string>
+	<key>LSFileQuarantineEnabled</key>
+	<true/>
+	<key>LSUIElement</key>
+	<true/>
+	<key>NSHighResolutionCapable</key>
+	<true/>
+	<key>NSSupportsAutomaticGraphicsSwitching</key>
+	<true/>
+</dict>
+</plist>

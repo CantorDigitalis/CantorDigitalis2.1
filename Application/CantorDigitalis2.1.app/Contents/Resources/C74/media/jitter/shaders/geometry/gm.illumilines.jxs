@@ -1,0 +1,249 @@
+<jittershader name="gm.illumilines.jxs">
+	<description>Basic Illumilines Geometry Shader</description>
+	<param name="Kd" type="vec4" default="0.2 0.2 0.2 0.8" />
+	<param name="Ks" type="vec4" default="1. 1. 1. 0.8" />
+	<param name="shininess" type="float" default="80." />
+
+	<param name="modelViewProjectionMatrix" type="mat4" state="MODELVIEW_PROJECTION_MATRIX" />
+	<param name="projectionMatrix" type="mat4" state="PROJECTION_MATRIX" />
+	<param name="modelViewMatrix" type="mat4" state="MODELVIEW_MATRIX" />
+	<param name="normalMatrix"    type="mat3" state="NORMAL_MATRIX" />
+	<param name="color" type="vec4" state="COLOR" />
+	<param name="position" type="vec3" state="POSITION" />
+	<param name="normal" type="vec3" state="NORMAL" />
+	<param name="LightingParameters" state="LIGHT" />
+
+	<language name="glsl" version="1.2">
+		<bind param="Kd" program="fp" />
+		<bind param="Ks" program="fp" />
+		<bind param="shininess" program="fp" />
+		<program name="vp" type="vertex">
+<![CDATA[
+
+#version 120
+
+void main(void)
+{
+	//just send the things as they are
+	gl_Position = gl_ModelViewMatrix*gl_Vertex;
+	gl_FrontColor = gl_Color;
+}
+
+]]>		
+		</program>
+		<program name="gp" vertices_out="2" input_type="lines_adjacency" output_type="line_strip" type="geometry">
+<![CDATA[
+
+#version 120
+#extension GL_EXT_geometry_shader4 : enable
+
+varying out vec3 P;
+varying out vec3 T;
+
+void main(void)
+{
+	gl_FrontColor = gl_FrontColorIn[1];
+	T = gl_PositionIn[2].xyz - gl_PositionIn[1].xyz;
+	P = gl_PositionIn[1].xyz;
+	gl_Position = gl_ProjectionMatrix*gl_PositionIn[1];
+	EmitVertex();
+	
+	gl_FrontColor = gl_FrontColorIn[2];
+	T = gl_PositionIn[3].xyz - gl_PositionIn[2].xyz;
+	P = gl_PositionIn[2].xyz;
+	gl_Position = gl_ProjectionMatrix*gl_PositionIn[2];
+	EmitVertex();
+	
+	EndPrimitive();
+}
+
+
+
+]]>
+		</program>
+		<program name="fp" type="fragment">
+<![CDATA[
+
+#version 120
+
+uniform vec4 Kd;
+uniform vec4 Ks;
+uniform float shininess;
+
+varying vec3 P;
+varying vec3 T;
+
+
+void main (void)
+{
+	vec3 Tn = normalize(T);
+	vec3 Ln = normalize(gl_LightSource[0].position.xyz - P.xyz);
+	vec3 Vn = normalize(P.xyz);
+	float distance = length(P.xyz);
+	
+	float lightDotTangent = dot(Ln, Tn);
+	float viewDotTangent = dot(Vn, Tn);
+	
+	//also diffuse term
+	float lightDotNormal = sqrt(1. - lightDotTangent*lightDotTangent);	
+	
+	float specularTerm = lightDotNormal * sqrt(1. - viewDotTangent*viewDotTangent) - 
+						lightDotTangent * viewDotTangent;
+
+	specularTerm = max(specularTerm, 0.);
+	specularTerm = pow(min(specularTerm, 1.), shininess);
+
+	float diffuseTerm = lightDotNormal;
+	
+	gl_FragColor = (diffuseTerm*Kd + specularTerm*Ks);
+}
+
+]]>		
+		</program>		
+	</language>
+
+<language name="glsl" version="1.5">
+	<bind param="Kd" program="fp" />
+	<bind param="Ks" program="fp" />
+	<bind param="shininess" program="fp" />
+
+	<bind param="position" program="vp" />
+	<bind param="color" program="vp" />	
+	<bind param="normal" program="vp" />
+	<bind param="modelViewMatrix" program="vp" />
+	<bind param="modelViewProjectionMatrix" program="vp" />
+	<bind param="projectionMatrix" program="gp" />
+	<bind param="LightingParameters" program="fp" />
+
+<program name="vp" type="vertex">
+<![CDATA[
+
+#version 330
+
+uniform mat4 modelViewMatrix;
+
+in vec3 position;
+in vec4 color;
+
+out jit_PerVertex {
+	vec4 color;
+	vec4 position;
+} jit_out;
+
+void main(void)
+{
+	//just send the things as they are
+	jit_out.position = modelViewMatrix*vec4(position, 1.0);
+	jit_out.color = color;
+}
+
+]]>		
+		</program>
+		<program name="gp" vertices_out="2" input_type="lines_adjacency" output_type="line_strip" type="geometry">
+<![CDATA[
+
+#version 330
+layout (lines_adjacency) in;
+layout (line_strip, max_vertices=2) out;
+
+uniform mat4 projectionMatrix;
+
+in jit_PerVertex {
+	vec4 color;
+	vec4 position;
+} jit_in[];
+
+out jit_PerVertex {
+	vec3 P;
+	vec3 T;
+	vec4 color;
+};
+
+void main(void)
+{
+	color = jit_in[1].color;
+	T = jit_in[2].position.xyz - jit_in[1].position.xyz;
+	P = jit_in[1].position.xyz;
+	gl_Position = projectionMatrix * jit_in[1].position;
+	EmitVertex();
+	
+	color = jit_in[2].color;
+	T = jit_in[3].position.xyz - jit_in[2].position.xyz;
+	P = jit_in[2].position.xyz;
+	gl_Position = projectionMatrix * jit_in[2].position;
+	EmitVertex();
+	
+	EndPrimitive();
+}
+
+]]>
+		</program>
+		<program name="fp" type="fragment">
+<![CDATA[
+
+#version 330
+
+uniform vec4 Kd;
+uniform vec4 Ks;
+uniform float shininess;
+
+layout (location = 0) out vec4 color;
+
+struct LightModelParameters {
+	vec4 ambient;
+};
+
+struct LightSourceParameters {
+	vec4 ambient;
+	vec4 diffuse;
+	vec4 specular;
+	vec4 position;
+	vec3 spotDirection;
+	float spotExponent;
+	float spotCutoff;
+	float spotCosCutoff;
+	float constantAttenuation;
+	float linearAttenuation;
+	float quadraticAttenuation;
+};
+
+layout (std140) uniform LightingParameters {
+	LightModelParameters lightModel;
+	LightSourceParameters light[1];
+};
+
+in jit_PerVertex {
+	vec3 P;
+	vec3 T;
+	vec4 color;
+} jit_in;
+
+
+void main (void)
+{
+	vec3 Tn = normalize(jit_in.T);
+	vec3 Ln = normalize(light[0].position.xyz - jit_in.P.xyz);
+	vec3 Vn = normalize(jit_in.P.xyz);
+	float distance = length(jit_in.P.xyz);
+	
+	float lightDotTangent = dot(Ln, Tn);
+	float viewDotTangent = dot(Vn, Tn);
+	
+	//also diffuse term
+	float lightDotNormal = sqrt(1. - lightDotTangent*lightDotTangent);	
+	
+	float specularTerm = lightDotNormal * sqrt(1. - viewDotTangent*viewDotTangent) - 
+						lightDotTangent * viewDotTangent;
+
+	specularTerm = max(specularTerm, 0.);
+	specularTerm = pow(min(specularTerm, 1.), shininess);
+
+	float diffuseTerm = lightDotNormal;
+	
+	color = (diffuseTerm*Kd + specularTerm*Ks);
+}
+
+]]>		
+		</program>		
+	</language>
+</jittershader>

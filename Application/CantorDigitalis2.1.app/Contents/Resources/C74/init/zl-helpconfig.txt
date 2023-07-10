@@ -1,0 +1,2 @@
+max classnamehelpcategory zl zlobjects;
+max categoryhelp zlobjects zl "zl Objects Overview";

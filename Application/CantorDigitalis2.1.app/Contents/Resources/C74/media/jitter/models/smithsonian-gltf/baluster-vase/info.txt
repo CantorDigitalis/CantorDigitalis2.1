@@ -1,0 +1,171 @@
+Smithsonian Institution
+______________________
+3D scene content information:
+
+	Title: Baluster vase, from a five-piece garniture (F1980.190-.194)
+	Record maintained by: Freer Gallery of Art and Arthur M. Sackler Gallery
+	Record ID: fsg_F1980.191a-c
+
+3D Scene ID:3d_package:d8c6393a-4ebc-11ea-b77f-2e728ce88125
+______________________
+File Usage:
+
+CC0
+This media file is in the public domain (free of copyright restrictions). You can copy, modify, and distribute this work without contacting the Smithsonian. For more information and to review the 3D disclaimer, visit the Smithsonian’s Terms of Use page. (https://www.si.edu/Termsofuse)
+
+
+______________________
+3D scene content details:
+
+Title: Baluster vase, from a five-piece garniture (F1980.190-.194)
+Smithsonian Record ID: edanmdm:fsg_F1980.191a-c
+
+	Title
+	Baluster vase, from a five-piece garniture (F1980.190-.194)
+
+	Metadata Usage
+	CC0
+
+	Guid
+	http://n2t.net/ark:/65665/ye33c798d33-dc71-4235-8ee8-e2cd50ba2eab
+
+	Data Source
+	Freer Gallery of Art and Arthur M. Sackler Gallery
+
+	Medium
+	Porcelain with cobalt pigment under clear colorless glaze
+
+	Dimensions
+	H x Diam (assembled): 46.3 × 17.2 cm (18 1/4 × 6 3/4 in)
+
+	Style
+	Jingdezhen ware
+
+	Previous custodian or owner
+	Duveen Brothers
+
+	Previous custodian or owner
+	Mrs. B. F. Jones
+
+	Previous custodian or owner
+	Mr. Myron S. Falk, Sr.
+
+	Previous custodian or owner
+	Myron S. Falk, Jr. (1906-1992)
+
+	Previous custodian or owner
+	Mrs. Mildred F. Loew
+
+	Previous custodian or owner
+	Mrs. Eleanor F. Lenzner
+
+	Provenance
+	To 1916
+
+	Provenance
+	Duveen Brothers, New York [1]
+
+	Provenance
+	From 1916 to 1941
+
+	Provenance
+	Mrs. B. F. Jones Jr. (d. 1941), Pittsburgh and Sewickley Heights, Pennsylvania, purchased from Duveen Brothers in 1916 [2]
+
+	Provenance
+	1941
+
+	Provenance
+	Sale, New York, Parke-Bernet Galleries, Inc., “Art Property and Furnishings of the Palatial Residence of the Late Mrs. B.F. Jones Jr, Sewickley Heights, PA,” November 27, 1941, lot 670 (ill.): “Important Blue and White Five-Piece Garniture, K’ang-hsi”
+
+	Provenance
+	From 1941 to no later than 1945
+
+	Provenance
+	Myron S. Falk, Sr. (1878-1945), Greenwich, Connecticut, purchased through Edward Wells at the Parke-Bernet Sale, Inc., New York, November 27, 1941 [3]
+
+	Provenance
+	From 1940s to 1980
+
+	Provenance
+	Myron S. Falk, Jr. (1906-1992), New York, given by Myron S. Falk, Sr. in the 1940s [4]
+
+	Provenance
+	From 1980
+
+	Provenance
+	Freer Gallery of Art, given by Myron S. Falk, Jr. and his sisters Mrs. Mildred F. Loew and Mrs. Eleanor F. Lenzner in 1980
+
+	Provenance
+	Notes:
+
+	Provenance
+	[1] The garniture appears in an undated Duveen Brothers black-and-white stock photo, which bears the handwritten notations: "1849/29761, Height of Vases 18 1/2 ins., beakers 17 1/2 ins." and "61" in the lower left corner, and "A set of 5 Blue & White Nankin vases & beakers", in the lower right corner. See Getty Research Institute, Los Angeles, Duveen Brothers records, Duveen Brothers stock documentation from the dealer’s library, 1829-1965. Series I. Photograph albums, 1871-1956. Series I.A. Stock albums, 1907-1954; ID/Accession Number: 2007.D.1 (bx.1-9), China books, vol. 3, p. 61. Persistent link: http://hdl.handle.net/10020/cat717039.
+
+	Provenance
+	[2] The purchase was recorded on September 19, 1941 in the Duveen Brothers' collector file for B. F. Jones Jr., as one of the "Objects sold directly to Mrs. B.F. Jones, Jr.", during the year 1916. There it is described as "A Garniture of Five Pieces of Old Chinese Porcelain of fine quality. Kang Hsi period. Consisting of 3 Vases with Covers, and 2 Beaker-shaped Vases, decorated with figures of Lange Eleisen flowers, etc.", and a price of $9,000 is noted. See Getty Research Institute, Los Angeles, Duveen Brothers records, 1876-1981 (bulk 1909-1964). Series II. Correspondence and papers. Series II.I. Collectors' files: Jones, B. F., Jr., 1, ca. 1917-1941, ID/Accession number: 960015, (bx.472,f.3), p. 2. Persistent link: http://hdl.handle.net/10020/960015b472f003.
+
+	Provenance
+	[3] The object is listed in an invoice issued by Wells Objects of Art Specialist in Chinese Antiquities to Myron S. Falk on November 28, 1941, copy in object file.
+
+	Provenance
+	A copy of the 1941 auction catalogue preserved in the Museum Library bears Myron S. Falk Sr.’s handwritten notations: “Welles will bid $1050 for M.S.F. Valued $3-4,000. Mrs. Jones paid Duveen Bros. $15,000", in the left margin and "Sold for $800. to M. S. F." in the right margin. The accompanying plate illustrating the garniture bears the handwritten notation: "In my opinion covers do not belong—but extremely fine set! Extremely rare in garniture form and without defects". See also “Art Sale Brings $14,135: K’an-shi Garniture is sold for $750…,” New York Times (November 27, 1941).
+
+	Provenance
+	[4] The objects were gifted by Myron S. Falk, Sr. to his son, Myron S. Falk, Jr., see Page Report, dated September 18, 1995, in object file.
+
+	Provenance
+	The objects were initially included in Sotheby-Parke-Bernet Galleries’s Sale “Fine Chinese Works of Art” on May 8, 1980 as lot 261 (color ill.) and then taken out of the sale.
+
+	Origin
+	Jingdezhen, Jiangxi province, China
+
+	Credit Line
+	Gift of Myron S. Falk, Jr. and his sisters, Mrs. Mildred F. Loew and Mrs. Eleanor F. Lenzner
+
+	Accession Number
+	F1980.191a-c
+
+	Date
+	1662-1722
+
+	Period
+	Qing dynasty
+
+	Type
+	Vessel
+
+	Topic
+	flower
+
+	Topic
+	Jingdezhen ware
+
+	Topic
+	music
+
+	Topic
+	dance
+
+	Topic
+	Qing dynasty (1644 - 1911)
+
+	Topic
+	Kangxi reign (1662 - 1722)
+
+	Topic
+	woman
+
+	Topic
+	cobalt pigment
+
+	Topic
+	China
+
+	Topic
+	porcelain
+
+	Topic
+	Chinese Art
+
+______________________
+

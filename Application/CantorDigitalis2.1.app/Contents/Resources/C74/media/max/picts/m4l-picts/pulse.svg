@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 13.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 14948)  -->
+
+<svg
+   version="1.1"
+   id="Calque_1"
+   x="0px"
+   y="0px"
+   width="39px"
+   height="18.8px"
+   viewBox="0 0 39 18.8"
+   enable-background="new 0 0 39 18.8"
+   xml:space="preserve"
+   sodipodi:docname="pulse.svg"
+   inkscape:version="1.2.1 (9c6d41e, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+   id="defs8" /><sodipodi:namedview
+   id="namedview6"
+   pagecolor="#ffffff"
+   bordercolor="#000000"
+   borderopacity="0.25"
+   inkscape:showpageshadow="2"
+   inkscape:pageopacity="0.0"
+   inkscape:pagecheckerboard="0"
+   inkscape:deskcolor="#d1d1d1"
+   showgrid="false"
+   inkscape:zoom="31.948718"
+   inkscape:cx="19.703451"
+   inkscape:cy="10.188202"
+   inkscape:window-width="2049"
+   inkscape:window-height="1205"
+   inkscape:window-x="1558"
+   inkscape:window-y="94"
+   inkscape:window-maximized="0"
+   inkscape:current-layer="square" />
+<g
+   id="square">
+	<path
+   id="polyline2"
+   style="fill:none;stroke:#000000;stroke-linecap:round"
+   d="m 0.583,9.133 v -8.25 h 9.480002 V 18.05 H 38.5 v -8.5"
+   sodipodi:nodetypes="cccccc" />
+<path
+   style="fill:none;fill-opacity:1;stroke-width:1;stroke-dasharray:none"
+   d="m 0.62600321,9.0770465 0.0313002,-8.23194217 18.84269663,0"
+   id="path1499" /></g>
+</svg>

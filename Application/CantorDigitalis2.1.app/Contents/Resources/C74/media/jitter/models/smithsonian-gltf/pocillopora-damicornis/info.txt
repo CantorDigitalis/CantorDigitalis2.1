@@ -1,0 +1,66 @@
+Smithsonian Institution
+______________________
+3D scene content information:
+
+	title: Pocillopora damicornis
+	Record maintained by: NMNH - Invertebrate Zoology Dept.
+	Record ID: nmnhinvertebratezoology_65106
+
+3D Scene ID:3d_package:1951c814-3758-4b7f-b0ba-8f996534ff2b
+______________________
+File Usage:
+
+CC0
+This media file is in the public domain (free of copyright restrictions). You can copy, modify, and distribute this work without contacting the Smithsonian. For more information and to review the 3D disclaimer, visit the Smithsonian’s Terms of Use page. (https://www.si.edu/Termsofuse)
+
+
+______________________
+3D scene content details:
+
+Title: Pocillopora damicornis
+Smithsonian Record ID: edanmdm:nmnhinvertebratezoology_65106
+
+	Title
+	Pocillopora damicornis
+
+	Metadata Usage
+	CC0
+
+	Guid
+	http://n2t.net/ark:/65665/3261c6112-f66d-4b8a-a6c5-8e4a2ec82edd
+
+	Data Source
+	NMNH - Invertebrate Zoology Dept.
+
+	Collector
+	Dr. Bert W. Hoeksema
+
+	Ocean/Sea/Gulf
+	South Pacific Ocean, Bismarck Sea
+
+	Preparation
+	Dry
+
+	Record Last Modified
+	29 Mar 2017
+
+	Site Number
+	10
+
+	Specimen Count
+	1
+
+	Place
+	Madang, Gosem Island, Near Cri, NW Side Of Island, Papua New Guinea, South Pacific Ocean
+
+	USNM Number
+	93379
+
+	Collection Date
+	29 May 1992
+
+	Published Name
+	Pocillopora damicornis (Linnaeus, 1758)
+
+______________________
+

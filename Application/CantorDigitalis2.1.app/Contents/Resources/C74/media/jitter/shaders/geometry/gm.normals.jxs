@@ -1,0 +1,242 @@
+<jittershader name="gm.test.jxs">
+	<description>Simple geometry shader test</description>
+	<param name="scale" type="float" default="1." />
+	<param name="c1" type="vec4" default="1.0 0.0 0.0 1.0" />
+	<param name="c2" type="vec4" default="0.0 0.0 1.0 1.0" />
+
+	<param name="modelViewProjectionMatrix" type="mat4" state="MODELVIEW_PROJECTION_MATRIX" />
+	<param name="projectionMatrix" type="mat4" state="PROJECTION_MATRIX" />
+	<param name="modelViewMatrix" type="mat4" state="MODELVIEW_MATRIX" />
+	<param name="normalMatrix"    type="mat3" state="NORMAL_MATRIX" />
+	<param name="color" type="vec4" state="COLOR" />
+	<param name="position" type="vec3" state="POSITION" />
+	<param name="normal" type="vec3" state="NORMAL" />
+
+	<language name="glsl" version="1.2">
+		<bind param="scale" program="gp" />
+		<bind param="c1" program="gp" />
+		<bind param="c2" program="gp" />
+		<program name="vp" type="vertex">
+<![CDATA[
+
+#version 120
+
+varying vec4 P;
+varying vec3 N;
+
+void main(void)
+{
+	//get the vertices into eye space
+	P = gl_ModelViewMatrix*gl_Vertex;
+	
+	//just send the things as they are
+	gl_Position = gl_Vertex;
+	gl_FrontColor = gl_Color;
+	
+	//get normals into eye space
+	N = gl_NormalMatrix*gl_Normal;
+}
+
+]]>		
+		</program>
+		<program name="gp" vertices_out="6" input_type="triangles" output_type="line_strip" type="geometry">
+<![CDATA[
+
+#version 120
+#extension GL_EXT_geometry_shader4 : enable
+
+uniform float scale;
+uniform vec4 c1;
+uniform vec4 c2;
+
+varying in vec4 P[3];
+varying in vec3 N[3];
+
+
+vec4 add_normal(vec4 p, vec3 n)
+{
+	vec4 t = p;
+	t.xyz += n.xyz*scale;
+	return t;
+}
+
+
+void main(void)
+{
+//--------------------------------------------------------------------------
+	gl_FrontColor = c1;
+	gl_Position = gl_ProjectionMatrix*P[0];
+	EmitVertex();
+	
+	gl_FrontColor = c2;
+	gl_Position = gl_ProjectionMatrix*add_normal(P[0], N[0]);
+	EmitVertex();	
+		EndPrimitive();
+//--------------------------------------------------------------------------
+	gl_FrontColor = c1;
+	gl_Position = gl_ProjectionMatrix*P[1];
+	EmitVertex();
+	
+	gl_FrontColor = c2;
+	gl_Position = gl_ProjectionMatrix*add_normal(P[1], N[1]);
+	EmitVertex();	
+		EndPrimitive();
+//--------------------------------------------------------------------------		
+	gl_FrontColor = c1;
+	gl_Position = gl_ProjectionMatrix*P[2];
+	EmitVertex();
+	
+	gl_FrontColor = c2;
+	gl_Position = gl_ProjectionMatrix*add_normal(P[2], N[2]);
+	EmitVertex();	
+		EndPrimitive();
+//--------------------------------------------------------------------------
+}
+
+
+]]>
+		</program>
+		<program name="fp" type="fragment">
+<![CDATA[
+
+#version 120
+
+
+void main (void)
+{
+	gl_FragColor = gl_Color;
+}
+]]>		
+		</program>		
+	</language>
+
+<language name="glsl" version="1.5">
+	<bind param="scale" program="gp" />
+	<bind param="c1" program="gp" />
+	<bind param="c2" program="gp" />
+
+	<bind param="position" program="vp" />
+	<bind param="color" program="vp" />	
+	<bind param="normal" program="vp" />
+	<bind param="modelViewMatrix" program="vp" />
+	<bind param="modelViewProjectionMatrix" program="vp" />
+	<bind param="projectionMatrix" program="gp" />
+	<bind param="normalMatrix" program="vp" />
+
+	<program name="vp" type="vertex">
+<![CDATA[
+
+#version 330
+
+uniform mat4 modelViewProjectionMatrix;
+uniform mat4 modelViewMatrix;
+uniform mat3 normalMatrix;
+
+in vec3 position;
+in vec4 color;
+in vec3 normal;
+
+out jit_PerVertex {
+	vec4 P;
+	vec3 N;
+	vec4 color;
+} jit_out;
+
+void main(void)
+{
+	//get the vertices into eye space
+	jit_out.P = modelViewMatrix*vec4(position, 1.0);
+	
+	//just send the things as they are
+	gl_Position = modelViewProjectionMatrix*vec4(position, 1.0);
+	jit_out.color = color;
+	
+	//get normals into eye space
+	jit_out.N = normalMatrix*normal;
+}
+]]>		
+		</program>
+		<program name="gp" vertices_out="6" input_type="triangles" output_type="line_strip" type="geometry">
+<![CDATA[
+
+#version 330
+layout (triangles) in;
+layout (line_strip, max_vertices=6) out;
+
+uniform mat4 projectionMatrix;
+
+uniform float scale;
+uniform vec4 c1;
+uniform vec4 c2;
+
+in jit_PerVertex {
+	vec4 P;
+	vec3 N;
+	vec4 color;
+} jit_in[];
+
+out jit_PerVertex {
+	flat vec4 color;
+};
+
+vec4 add_normal(vec4 p, vec3 n)
+{
+	vec4 t = p;
+	t.xyz += n.xyz*scale;
+	return t;
+}
+
+
+void main(void)
+{
+//--------------------------------------------------------------------------
+	color = c1;
+	gl_Position = projectionMatrix*jit_in[0].P;
+	EmitVertex();
+	
+	color = c2;
+	gl_Position = projectionMatrix*add_normal(jit_in[0].P, jit_in[0].N);
+	EmitVertex();	
+	EndPrimitive();
+//--------------------------------------------------------------------------
+	color = c1;
+	gl_Position = projectionMatrix*jit_in[1].P;
+	EmitVertex();
+	
+	color = c2;
+	gl_Position = projectionMatrix*add_normal(jit_in[1].P, jit_in[1].N);
+	EmitVertex();	
+	EndPrimitive();
+//--------------------------------------------------------------------------		
+	color = c1;
+	gl_Position = projectionMatrix*jit_in[2].P;
+	EmitVertex();
+	
+	color = c2;
+	gl_Position = projectionMatrix*add_normal(jit_in[2].P, jit_in[2].N);
+	EmitVertex();	
+	EndPrimitive();
+//--------------------------------------------------------------------------
+}
+
+]]>
+		</program>
+		<program name="fp" type="fragment">
+<![CDATA[
+
+#version 330
+
+in jit_PerVertex {
+	flat vec4 color;
+} jit_in;
+
+out vec4 color;
+
+void main (void)
+{
+	color = jit_in.color;
+}
+]]>	
+		</program>		
+	</language>	
+</jittershader>

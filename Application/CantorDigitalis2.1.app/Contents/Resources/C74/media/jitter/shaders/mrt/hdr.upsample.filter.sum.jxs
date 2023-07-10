@@ -1,0 +1,49 @@
+<jittershader name="hdr.upsample.filter.sum.jxs">
+	<param name="tex_prev" type="int" default="0" />
+	<param name="tex_target" type="int" default="1" />
+	<param name="sampleScale" type="float" default="1.0" />
+	<language name="glsl" version="1.2">
+		<bind param="tex_prev" program="fp" />
+		<bind param="tex_target" program="fp" />
+		<bind param="sampleScale" program="fp" />
+		<program name="vp" type="vertex" source="sh.passthrudim.vp.glsl" />
+		<program name="fp" type="fragment">
+<![CDATA[
+#version 120
+varying vec2 texcoord0;
+varying vec2 texcoord1;
+uniform sampler2DRect tex_prev;
+uniform sampler2DRect tex_target;
+
+uniform float sampleScale;
+
+vec4 UpsampleTent(sampler2DRect tex, vec2 uv, vec2 texelSize, vec4 sampleScale)
+{
+    vec4 d = texelSize.xyxy * vec4(1.0, 1.0, -1.0, 0.0) * sampleScale;
+
+    vec4 s;
+    s =  texture2DRect(tex, (uv - d.xy));
+    s += texture2DRect(tex, (uv - d.wy)) * 2.0;
+    s += texture2DRect(tex, (uv - d.zy));
+
+    s += texture2DRect(tex, (uv + d.zw)) * 2.0;
+    s += texture2DRect(tex, (uv       )) * 4.0;
+    s += texture2DRect(tex, (uv + d.xw)) * 2.0;
+
+    s += texture2DRect(tex, (uv + d.zy));
+    s += texture2DRect(tex, (uv + d.wy)) * 2.0;
+    s += texture2DRect(tex, (uv + d.xy));
+
+    return s * (1.0 / 16.0);
+}
+
+void main()
+{
+	vec4 targetTexColor = UpsampleTent(tex_target, texcoord1, vec2(1.0), vec4(1.0));
+	vec4 previousTexColor = UpsampleTent(tex_prev, texcoord0, vec2(1.0), vec4(sampleScale));
+	gl_FragColor = previousTexColor+targetTexColor;
+}
+]]>		
+		</program>		
+	</language>
+</jittershader>

@@ -1,0 +1,18 @@
+<jitterpass>
+	<pass name="motionglitch">
+		<subpass file="mrt.motion.glitch.jxs" output="COLOR">
+			<input source="COLOR" />
+			<input source="VELOCITY" />
+			<input source="HISTORY" />
+		</subpass>
+	</pass>
+	<pass name="motionglitch-ext">
+		<subpass file="mrt.motion.glitch.jxs" output="COLOR">
+			<input source="COLOR" />
+			<input source="VELOCITY" />
+			<input source="TEXTURE0" />
+		</subpass>
+	</pass>
+</jitterpass>
+
+

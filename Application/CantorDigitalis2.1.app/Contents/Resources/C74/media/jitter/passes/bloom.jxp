@@ -1,0 +1,120 @@
+<jitterpass>
+	<pass name="bloom">
+		<bind name="blur_width" param="width" default="0.5" />
+		<subpass file="hdr.bloom.jxs" dimscale="0.5 0.5">
+			<input source="COLOR" />
+		</subpass>
+		<subpass file="cf.gaussian.2p.jxs">
+			<input source="PREVIOUS" />
+		</subpass>
+		<subpass file="cf.gaussian.2p.jxs">
+			<input source="PREVIOUS" />
+		</subpass>	
+		<subpass file="cf.gaussian.2p.jxs">
+			<input source="PREVIOUS" />
+		</subpass>
+		<subpass file="cf.gaussian.2p.jxs">
+			<input source="PREVIOUS" />
+		</subpass>	
+		<subpass file="hdr.bloom.combine.jxs" output="COLOR">
+			<input source="COLOR" />
+			<input source="PREVIOUS" />
+		</subpass>
+	</pass>
+	<pass name="bloom-tonemap">
+		<bind name="blur_width" param="width" default="0.5" />
+		<subpass file="hdr.bloom.jxs" dimscale="0.5 0.5">
+			<input source="COLOR" />
+		</subpass>
+		<subpass file="cf.gaussian.2p.jxs">
+			<input source="PREVIOUS" />
+		</subpass>
+		<subpass file="cf.gaussian.2p.jxs">
+			<input source="PREVIOUS" />
+		</subpass>	
+		<subpass file="cf.gaussian.2p.jxs">
+			<input source="PREVIOUS" />
+		</subpass>
+		<subpass file="cf.gaussian.2p.jxs">
+			<input source="PREVIOUS" />
+		</subpass>	
+		<subpass file="hdr.bloom.tonemap.jxs" output="COLOR">
+			<input source="COLOR" />
+			<input source="PREVIOUS" />
+		</subpass>
+	</pass>		
+	<pass name="bloom-hq">
+		<bind name="upsample_scale" param="sampleScale" default="1." />
+		
+		<!-- do a bloom pass -->
+		<subpass file="hdr.bloom.jxs" >
+			<input source="COLOR" />
+		</subpass>
+
+		<!-- 8 subpasses of downsample -->
+		<subpass file="hdr.downsample.filter.jxs" dimscale="0.5 0.5">
+			<input source="PREVIOUS" />
+		</subpass>
+		<subpass file="hdr.downsample.filter.jxs" dimscale="0.5 0.5">
+			<input source="PREVIOUS" />
+		</subpass>
+		<subpass file="hdr.downsample.filter.jxs" dimscale="0.5 0.5">
+			<input source="PREVIOUS" />
+		</subpass>
+		<subpass file="hdr.downsample.filter.jxs" dimscale="0.5 0.5">
+			<input source="PREVIOUS" />
+		</subpass>
+		<subpass file="hdr.downsample.filter.jxs" dimscale="0.5 0.5">
+			<input source="PREVIOUS" />
+		</subpass>
+		<subpass file="hdr.downsample.filter.jxs" dimscale="0.5 0.5">
+			<input source="PREVIOUS" />
+		</subpass>
+		<subpass file="hdr.downsample.filter.jxs" dimscale="0.5 0.5">
+			<input source="PREVIOUS" />
+		</subpass>
+		<subpass file="hdr.downsample.filter.jxs" dimscale="0.5 0.5">
+			<input source="PREVIOUS" />
+		</subpass>
+
+		<!-- 8 subpasses of upsample summed with downsample outputs -->
+		<subpass file="hdr.upsample.filter.sum.jxs" dimscale="2 2">
+			<input source="PREVIOUS" />
+			<input source="SUBPASS8" />
+		</subpass>
+		<subpass file="hdr.upsample.filter.sum.jxs" dimscale="2 2">
+			<input source="PREVIOUS" />
+			<input source="SUBPASS7" />
+		</subpass>
+		<subpass file="hdr.upsample.filter.sum.jxs" dimscale="2 2">
+			<input source="PREVIOUS" />
+			<input source="SUBPASS6" />
+		</subpass>
+		<subpass file="hdr.upsample.filter.sum.jxs" dimscale="2 2">
+			<input source="PREVIOUS" />
+			<input source="SUBPASS5" />
+		</subpass>						
+		<subpass file="hdr.upsample.filter.sum.jxs" dimscale="2 2">
+			<input source="PREVIOUS" />
+			<input source="SUBPASS4" />
+		</subpass>
+		<subpass file="hdr.upsample.filter.sum.jxs" dimscale="2 2">
+			<input source="PREVIOUS" />
+			<input source="SUBPASS3" />
+		</subpass>
+		<subpass file="hdr.upsample.filter.sum.jxs" dimscale="2 2">
+			<input source="PREVIOUS" />
+			<input source="SUBPASS2" />
+		</subpass>
+		<subpass file="hdr.upsample.filter.sum.jxs" dimscale="2 2">
+			<input source="PREVIOUS" />
+			<input source="SUBPASS1" />
+		</subpass>
+		
+		<!-- composite with original and tonemap for output -->
+		<subpass file="hdr.bloom.tonemap.aces.jxs" output="COLOR">
+			<input source="COLOR" />
+			<input source="PREVIOUS" />
+		</subpass>
+	</pass>	
+</jitterpass>

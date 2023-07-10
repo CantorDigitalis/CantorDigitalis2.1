@@ -1,0 +1,131 @@
+<jittershader name="viz.tangents.jxs">
+	<description>Visualize The Tangents in Model Space</description>
+
+	<param name="modelViewProjectionMatrix" type="mat4" state="MODELVIEW_PROJECTION_MATRIX" />
+	<param name="position" type="vec3" state="POSITION" />
+
+	<language name="glsl" version="1.2">
+		<program name="vp" type="vertex">
+<![CDATA[
+
+#version 120
+
+void main(void)
+{
+	//just send the things as they are
+	gl_Position = gl_Vertex;
+}
+
+]]>		
+		</program>
+		<program name="gp" vertices_out="2" input_type="lines_adjacency" output_type="line_strip" type="geometry">
+<![CDATA[
+
+#version 120
+#extension GL_EXT_geometry_shader4 : enable
+
+varying out vec3 T;
+
+void main(void)
+{
+	T = gl_PositionIn[2].xyz - gl_PositionIn[1].xyz;
+	gl_Position = gl_ModelViewProjectionMatrix*gl_PositionIn[1];
+	EmitVertex();
+	
+	T = gl_PositionIn[3].xyz - gl_PositionIn[2].xyz;
+	gl_Position = gl_ModelViewProjectionMatrix*gl_PositionIn[2];
+	EmitVertex();
+	
+	EndPrimitive();
+}
+
+
+]]>
+		</program>
+		<program name="fp" type="fragment">
+<![CDATA[
+
+#version 120
+
+
+varying vec3 T;
+
+void main (void)
+{
+	gl_FragColor = vec4(normalize(T), 1.);
+}
+
+
+]]>		
+		</program>		
+	</language>
+
+<language name="glsl" version="1.5">
+	<bind param="position" program="vp" />
+	<bind param="modelViewProjectionMatrix" program="gp" />
+
+<program name="vp" type="vertex">
+<![CDATA[
+
+#version 330
+
+in vec3 position;
+
+void main(void)
+{
+	//just send the things as they are
+	gl_Position = vec4(position, 1.0);
+}
+
+]]>		
+		</program>
+		<program name="gp" vertices_out="2" input_type="lines_adjacency" output_type="line_strip" type="geometry">
+<![CDATA[
+
+#version 330
+
+layout (lines_adjacency) in;
+layout (line_strip, max_vertices=2) out;
+
+uniform mat4 modelViewProjectionMatrix;
+
+out jit_PerVertex {
+	vec3 T;
+};
+
+void main(void)
+{
+	T = gl_in[0].gl_Position.xyz - gl_in[1].gl_Position.xyz;
+	gl_Position = modelViewProjectionMatrix*gl_in[1].gl_Position;
+	EmitVertex();
+	
+	T = gl_in[3].gl_Position.xyz - gl_in[2].gl_Position.xyz;
+	gl_Position = modelViewProjectionMatrix*gl_in[2].gl_Position;
+	EmitVertex();
+	
+	EndPrimitive();
+}
+
+
+]]>
+		</program>
+		<program name="fp" type="fragment">
+<![CDATA[
+
+#version 330
+
+layout (location = 0) out vec4 color;
+
+in jit_PerVertex {
+	vec3 T;
+} jit_in;
+
+void main (void)
+{
+	color = vec4(normalize(jit_in.T), 1.);
+}
+
+]]>		
+		</program>		
+	</language>
+</jittershader>

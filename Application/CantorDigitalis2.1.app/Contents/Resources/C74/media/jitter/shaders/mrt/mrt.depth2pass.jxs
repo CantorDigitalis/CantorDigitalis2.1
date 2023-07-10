@@ -1,0 +1,59 @@
+<jittershader>
+	<description> Combine and rebuild depth from two render passes </description>
+	<param name="tex_color" type="int" default="0" />
+	<param name="tex_normals" type="int" default="1" />	
+	<param name="tex_normals2" type="int" default="2" />
+	<param name="farDistance" type="float" state="FAR_CLIP" />	
+	<param name="farCorner" type="vec3" state="FAR_CORNER" />	
+	<language name="glsl" version="1.2">
+		<bind param="tex_normals" program="fp" />
+		<bind param="tex_color" program="fp" />
+		<bind param="tex_normals2" program="fp" />
+		<bind param="farDistance" program="fp" />
+		<bind param="farCorner" program="vp" />			
+		<program name="vp" type="vertex">
+<![CDATA[
+
+varying vec2 texcoord0;
+varying vec3 ray;
+uniform vec3 farCorner;
+
+void main()
+{
+	vec2 pos = sign(gl_Vertex).xy;
+	ray = farCorner * vec3(pos.xy, 1);
+	texcoord0 = vec2(gl_TextureMatrix[0] * gl_MultiTexCoord0);
+	gl_Position = ftransform();
+}
+
+]]>		
+		</program>
+		<program name="fp" type="fragment">
+<![CDATA[
+#version 120
+varying vec2 texcoord0;
+varying vec3 ray;
+
+uniform sampler2DRect tex_normals;
+uniform sampler2DRect tex_normals2;
+uniform sampler2DRect tex_color;
+uniform float farDistance;
+
+void main()
+{
+	float depth = texture2DRect(tex_normals, texcoord0).w;
+	float depth2 = texture2DRect(tex_normals2, texcoord0).w;
+
+	vec3 viewPos = normalize(ray) * farDistance * depth;
+	vec3 viewPos2 = normalize(ray) * farDistance * depth2;
+
+	if(viewPos2.z > viewPos.z && (depth2-0.0001>0.0))
+		discard;
+	
+	vec4 image = texture2DRect(tex_color, texcoord0);	
+	gl_FragColor = vec4(image.rgb, 0);
+}
+]]>		
+		</program>		
+	</language>
+</jittershader>

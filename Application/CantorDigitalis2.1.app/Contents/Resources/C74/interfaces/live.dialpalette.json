@@ -1,0 +1,63 @@
+{
+	"categories": [
+		{
+			"name": "Interface",
+			"color": [
+				0.592,
+				0.776,
+				0.474,
+				1.0
+			],
+			"say_objects": 1,
+			"primary_classes": [
+				"live.numbox",
+				"live.text",
+				"live.menu",
+				"live.tab",
+				"live.arrows",
+				"live.button",
+				"live.dial",
+				"live.slider",
+				"live.line",
+				"live.drop",
+				"live.toggle",
+				"live.comment"
+			],
+			"secondary_classes": []
+		},
+		
+		{
+			"name": "Audio",
+			"color": [
+				0.592,
+				0.776,
+				0.474,
+				1.0
+			],
+			"say_objects": 1,
+			"primary_classes": [
+				"live.scope~",
+				"live.adsrui",
+				"live.gain~",
+				"live.meter~"
+			],
+			"secondary_classes": []
+		},
+		
+		{
+			"name": "Widgets",
+			"color": [
+				0.592,
+				0.776,
+				0.474,
+				1.0
+			],
+			"say_objects": 1,
+			"primary_classes": [
+				"live.grid",
+				"live.step"
+			],
+			"secondary_classes": []
+		}
+	]
+}

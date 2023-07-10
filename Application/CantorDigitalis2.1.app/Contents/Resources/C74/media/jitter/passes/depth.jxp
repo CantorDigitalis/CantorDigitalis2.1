@@ -1,0 +1,15 @@
+<jitterpass>
+	<pass name="depth">
+		<subpass file="mrt.depth.jxs" output="DEPTH">
+			<input source="COLOR" />
+			<input source="NORMALS" />			
+		</subpass>
+	</pass>
+	<pass name="depth2pass">
+		<subpass file="mrt.depth2pass.jxs">
+			<input source="COLOR" />			
+			<input source="NORMALS" />			
+			<input source="TEXTURE0" />			
+		</subpass>
+	</pass>
+</jitterpass>
