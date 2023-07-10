@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 503.0, -993.0, 778.0, 674.0 ],
+		"rect" : [ 503.0, -993.0, 780.0, 674.0 ],
 		"bglocked" : 1,
 		"openinpresentation" : 1,
 		"default_fontsize" : 11.0,
@@ -61,7 +61,7 @@
 					"patching_rect" : [ 230.0, 1145.0, 62.0, 19.0 ],
 					"saved_object_attributes" : 					{
 						"allwindowsactive" : 0,
-						"appicon_mac" : "Macintosh HD:/Users/thomaslucas/Documents/Max 8/Projects/CantorDigitalis2.1/other/cantordigitalis.icns",
+						"appicon_mac" : "Macintosh HD:/Users/thomaslucas/Documents/Max 8/Projects/CantorDigitalis2.1/Sources/CantorDigitalis2.1/other/cantordigitalis.icns",
 						"appicon_win" : "",
 						"audiosupport" : 1,
 						"bundleidentifier" : "com.mycompany.myprogram",
@@ -675,7 +675,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1150.0, 760.0, 347.0, 19.0 ],
-					"restore" : [ 0.188976377952756 ],
+					"restore" : [ 0.196850393700787 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -696,7 +696,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1150.0, 740.0, 349.0, 19.0 ],
-					"restore" : [ 0.173228346456693 ],
+					"restore" : [ 0.196850393700787 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -1735,13 +1735,12 @@
 									"fontname" : "Calibri",
 									"fontsize" : 11.0,
 									"id" : "obj-201",
-									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 849.0, 706.5, 50.0, 30.0 ],
-									"text" : "0.173228"
+									"text" : "0.19685"
 								}
 
 							}
@@ -2709,6 +2708,7 @@
 									"fontname" : "Calibri",
 									"fontsize" : 11.0,
 									"id" : "obj-533",
+									"linecount" : 3,
 									"maxclass" : "newobj",
 									"numinlets" : 3,
 									"numoutlets" : 2,
@@ -3087,6 +3087,7 @@
 									"fontname" : "Calibri",
 									"fontsize" : 11.0,
 									"id" : "obj-520",
+									"linecount" : 3,
 									"maxclass" : "newobj",
 									"numinlets" : 3,
 									"numoutlets" : 2,
@@ -5428,7 +5429,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 443.137512000000015, 1905.0, 74.0, 19.0 ],
-									"text" : "3679.37"
+									"text" : "3600."
 								}
 
 							}
@@ -5437,13 +5438,13 @@
 									"fontname" : "Calibri",
 									"fontsize" : 11.0,
 									"id" : "obj-410",
-									"linecount" : 3,
+									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 368.137512000000015, 1905.0, 34.0, 41.0 ],
-									"text" : "2861.732283"
+									"text" : "2800."
 								}
 
 							}
@@ -5457,7 +5458,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 293.137512000000015, 1905.0, 74.0, 19.0 ],
-									"text" : "2555.11811"
+									"text" : "2500."
 								}
 
 							}
@@ -5471,7 +5472,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 218.137496999999996, 1905.0, 74.0, 19.0 ],
-									"text" : "1226.456693"
+									"text" : "1200."
 								}
 
 							}
@@ -5485,7 +5486,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 143.137482000000006, 1905.0, 70.0, 19.0 ],
-									"text" : "715.433071"
+									"text" : "700."
 								}
 
 							}
@@ -7351,6 +7352,7 @@
 									"fontname" : "Calibri",
 									"fontsize" : 11.0,
 									"id" : "obj-3",
+									"linecount" : 3,
 									"maxclass" : "newobj",
 									"numinlets" : 3,
 									"numoutlets" : 2,
@@ -7694,6 +7696,7 @@
 									"fontname" : "Calibri",
 									"fontsize" : 11.0,
 									"id" : "obj-244",
+									"linecount" : 3,
 									"maxclass" : "newobj",
 									"numinlets" : 3,
 									"numoutlets" : 2,
@@ -7722,6 +7725,7 @@
 									"fontname" : "Calibri",
 									"fontsize" : 11.0,
 									"id" : "obj-252",
+									"linecount" : 3,
 									"maxclass" : "newobj",
 									"numinlets" : 3,
 									"numoutlets" : 2,
@@ -7750,6 +7754,7 @@
 									"fontname" : "Calibri",
 									"fontsize" : 11.0,
 									"id" : "obj-263",
+									"linecount" : 3,
 									"maxclass" : "newobj",
 									"numinlets" : 3,
 									"numoutlets" : 2,
@@ -10862,6 +10867,7 @@
 									"fontname" : "Calibri",
 									"fontsize" : 11.0,
 									"id" : "obj-264",
+									"linecount" : 3,
 									"maxclass" : "newobj",
 									"numinlets" : 3,
 									"numoutlets" : 2,
@@ -10908,6 +10914,7 @@
 									"fontname" : "Calibri",
 									"fontsize" : 11.0,
 									"id" : "obj-260",
+									"linecount" : 3,
 									"maxclass" : "newobj",
 									"numinlets" : 3,
 									"numoutlets" : 2,
@@ -10954,6 +10961,7 @@
 									"fontname" : "Calibri",
 									"fontsize" : 11.0,
 									"id" : "obj-254",
+									"linecount" : 3,
 									"maxclass" : "newobj",
 									"numinlets" : 3,
 									"numoutlets" : 2,
@@ -11000,6 +11008,7 @@
 									"fontname" : "Calibri",
 									"fontsize" : 11.0,
 									"id" : "obj-204",
+									"linecount" : 3,
 									"maxclass" : "newobj",
 									"numinlets" : 3,
 									"numoutlets" : 2,
@@ -11046,6 +11055,7 @@
 									"fontname" : "Calibri",
 									"fontsize" : 11.0,
 									"id" : "obj-119",
+									"linecount" : 3,
 									"maxclass" : "newobj",
 									"numinlets" : 3,
 									"numoutlets" : 2,
@@ -11724,6 +11734,7 @@
 									"fontname" : "Calibri",
 									"fontsize" : 11.0,
 									"id" : "obj-94",
+									"linecount" : 3,
 									"maxclass" : "newobj",
 									"numinlets" : 3,
 									"numoutlets" : 2,
@@ -11738,6 +11749,7 @@
 									"fontname" : "Calibri",
 									"fontsize" : 11.0,
 									"id" : "obj-85",
+									"linecount" : 3,
 									"maxclass" : "newobj",
 									"numinlets" : 3,
 									"numoutlets" : 2,
@@ -11752,6 +11764,7 @@
 									"fontname" : "Calibri",
 									"fontsize" : 11.0,
 									"id" : "obj-70",
+									"linecount" : 3,
 									"maxclass" : "newobj",
 									"numinlets" : 3,
 									"numoutlets" : 2,
@@ -17583,7 +17596,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 820.0, 820.0, 311.0, 19.0 ],
-					"restore" : [ 0.125984251968504 ],
+					"restore" : [ 0.149606299212598 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -17604,7 +17617,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 820.0, 860.0, 293.0, 19.0 ],
-					"restore" : [ 0.488188976377953 ],
+					"restore" : [ 0.496062992125984 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -17625,7 +17638,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 820.0, 880.0, 323.0, 19.0 ],
-					"restore" : [ 0.692913385826772 ],
+					"restore" : [ 0.708661417322835 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
