@@ -1,0 +1,2 @@
+Application/CantorDigitalis2.1.app/Contents/Resources/C74/extensions/max/maxclang.mxo/Contents/MacOS/maxclang filter=lfs diff=lfs merge=lfs -text
+Application/CantorDigitalis2.1.app/Contents/Frameworks/Chromium[[:space:]]Embedded[[:space:]]Framework.framework/Chromium[[:space:]]Embedded[[:space:]]Framework filter=lfs diff=lfs merge=lfs -text
