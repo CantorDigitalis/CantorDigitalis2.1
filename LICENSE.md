@@ -4,7 +4,8 @@ We would be very pleased you let us know at cantordigitalis@limsi.fr if you have
 Cantor Digitalis
 ———————————————————————————————————————————————————————————————————————————————
 
-Copyright (c) 2014, 2016, LIMSI, CNRS
+Copyright (c) 2014, 2016, 2023, LIMSI, CNRS
+Contributors 2023: Christophe d'Alessandro, Thomas Lucas
 Contributors 2016: Christophe d'Alessandro, Boris Doval, Lionel Feugère, Olivier Perrotin
 Contributors 2014: Christophe d'Alessandro, Boris Doval, Lionel Feugère, Sylvain Le Beux, Olivier Perrotin 
 
@@ -14,6 +15,7 @@ Boris Doval - boris.doval@upmc.fr
 Lionel Feugère - lionel.feugere@limsi.fr
 Sylvain Le Beux - slebeux@limsi.fr
 Olivier Perrotin - olivier.perrotin@limsi.fr
+Thomas Lucas - thomas.lucas@sorbonne-universite.fr
 
 This software is a singing synthesis computer program made of a digital formant synthesizer driven by one or several control interfaces. It is composed of a suite of Max patches.
 
@@ -35,7 +37,7 @@ The fact that you are presently reading this means that you have had knowledge o
 CantorDigitalis uses S2M.WACOM and S2M.WACOMTOUCH, Max externals and C sources for the tablet data reception.
 ———————————————————————————————————————————————————————————————————————————————
 S2M.WACOM and S2M.WACOMTOUCH
-Copyright CNRS-LMA (2011-2013). Contributor: Charles Gondre
+Copyright CNRS-LMA (2011-2013). Contributor: Charles Gondre (Updated by Thomas Lucas and Volker Böhn)
 
 This software is governed by the CeCILL license under French law and abiding by the rules of distribution of free software. You can use, modify and/ or redistribute the software under the terms of the CeCILL license as circulated by CEA, CNRS, and INRIA at the following URL:
 http://www.cecill.info/index.en.html
@@ -46,6 +48,7 @@ The software was developed during the métason project (ANR-10-CORD-0003) and ca
 http://metason.cnrs-mrs.fr/Resultats/MaxMSP/index.html
 
 [s2m.wacom] is based on the design of the [wacom] object whose history is :
+  - Version 1.3 updated by Volker Böhm
   - Version 3. (for OSX) by Jean-Michel Couturier, CNRS-LMA, France, 2003.
   - wacom object for os9 (version 2) by Richard Dudas. Copyright (c) 1999, the Regents of the University of California.
     Special thanks to Atau Tanaka for suggesting this object back in the Bionic days. Thanks to CNMAT for sponsoring the version 2.
