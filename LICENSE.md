@@ -37,7 +37,7 @@ The fact that you are presently reading this means that you have had knowledge o
 CantorDigitalis uses S2M.WACOM and S2M.WACOMTOUCH, Max externals and C sources for the tablet data reception.
 ———————————————————————————————————————————————————————————————————————————————
 S2M.WACOM and S2M.WACOMTOUCH
-Copyright CNRS-LMA (2011-2013). Contributor: Charles Gondre (Updated by Thomas Lucas and Volker Böhn)
+Copyright CNRS-LMA (2011-2013). Contributor: Charles Gondre (Updated by Volker Böhn and Thomas Lucas)
 
 This software is governed by the CeCILL license under French law and abiding by the rules of distribution of free software. You can use, modify and/ or redistribute the software under the terms of the CeCILL license as circulated by CEA, CNRS, and INRIA at the following URL:
 http://www.cecill.info/index.en.html
@@ -52,6 +52,12 @@ http://metason.cnrs-mrs.fr/Resultats/MaxMSP/index.html
   - Version 3. (for OSX) by Jean-Michel Couturier, CNRS-LMA, France, 2003.
   - wacom object for os9 (version 2) by Richard Dudas. Copyright (c) 1999, the Regents of the University of California.
     Special thanks to Atau Tanaka for suggesting this object back in the Bionic days. Thanks to CNMAT for sponsoring the version 2.
+
+[s2m.wacomtouch] gets the multitouch data from the Wacom™ tablets that support it. Its history is :
+  - Version 1.2: updated for arm architecture by Thomas Lucas in march 2023
+  - Version 1.1: the former 0-1 mode has been renamed 'logical' and a new '0-1' mode has been added, which will allways give 0-1 coordinates, even on screen tablets. fixed a finger index issue and replaced the abstraction 'recycleFingersIDs.maxpat' by the javascript 's2m.recycleFingersIDs.js' in june 2014
+  - Version 1: first release, with 64b support
+
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 s2m.wacom has been done with ObjectiveMax - A framework for creating Max objects using Objective-C
