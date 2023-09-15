@@ -15,6 +15,7 @@ Boris Doval - boris.doval@upmc.fr
 Lionel Feugère - lionel.feugere@limsi.fr
 Sylvain Le Beux - slebeux@limsi.fr
 Olivier Perrotin - olivier.perrotin@limsi.fr
+Thomas Lucas - thomas.lucas@sorbonne-universite.fr
 
 This software is a singing synthesis computer program made of a digital formant synthesizer driven by one or several control interfaces. It is composed of a suite of Max patches.
 
