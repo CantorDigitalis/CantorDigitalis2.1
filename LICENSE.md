@@ -37,7 +37,7 @@ The fact that you are presently reading this means that you have had knowledge o
 CantorDigitalis uses S2M.WACOM and S2M.WACOMTOUCH, Max externals and C sources for the tablet data reception.
 ———————————————————————————————————————————————————————————————————————————————
 S2M.WACOM and S2M.WACOMTOUCH
-Copyright CNRS-LMA (2011-2013). Contributor: Charles Gondre (Updated by Volker Böhn and Thomas Lucas)
+Copyright CNRS-LMA (2011-2013). Contributor: Charles Gondre (Updated by Volker Böhm and Thomas Lucas)
 
 This software is governed by the CeCILL license under French law and abiding by the rules of distribution of free software. You can use, modify and/ or redistribute the software under the terms of the CeCILL license as circulated by CEA, CNRS, and INRIA at the following URL:
 http://www.cecill.info/index.en.html
